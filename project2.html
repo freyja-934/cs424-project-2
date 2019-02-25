@@ -49,6 +49,8 @@
                  </li>
                  <li><a href="javascript:void(0)" onclick="openCity(event, 'Interesting');" class="active">Interesting Things</a>
                  </li>
+                 <li><a href="javascript:void(0)" onclick="openCity(event, 'Members');" class="active">Group Members</a>
+                 </li>
               </ul>
             </div>
 <hr>
@@ -73,6 +75,18 @@
     <div id="Interesting" class="w3-container city" style="display:none">
       <h2>Interesting Things</h2>
       <p>Tokyo is the capital of Japan.</p>
+    </div>
+    <div id="Members" class="w3-container city" style="display:none">
+      <h2>Members</h2>
+      <p>Casey Charlesworth
+        <br>
+        Conrad
+        <br>
+        Nicole
+        <br>
+        Mohammed
+
+    </p>
     </div>
 
 </div>
@@ -101,6 +115,9 @@ function openCity(evt, cityName) {
   }
   if(cityName != "Interesting"){
      document.getElementById("Interesting").style.display = "none";
+  }
+  if(cityName != "Members"){
+     document.getElementById("Members").style.display = "none";
   }
 
 
