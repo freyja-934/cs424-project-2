@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <title>Echoes - Free HTML Bootstrap Template</title>
+      <!-- Css -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/lightbox.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <nav class="navbar navbar-default color-fill navbar-fixed-top">
+         <div class="col-md-12">
+            <div class="nav">
+               <button class="btn-nav">
+               <span class="icon-bar top"></span>
+               <span class="icon-bar middle"></span>
+               <span class="icon-bar bottom"></span>
+               </button>
+            </div>
+            <a class="navbar-brand" href="index.html">
+            <!-- <img class="logo" src="img/logo.png" alt="logo"> -->
+            <span style="letter-spacing: 4px">PROJECT 2</span>
+            </a>
+            <div class="nav-content hideNav hidden">
+              <ul class="nav-list vcenter">
+                <li class="nav-item"><a class="item-anchor" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="item-anchor" href="updates.html">Weekly Updates</a></li>
+                <li class="nav-item"><a class="item-anchor" href="project2.html">Project</a></li>
+              </ul>
+            </div>
+         </div>
+      </nav>
+      <section id="portfolio">
+         <div class="container">
+           <div class="row text-center" style="position: center;" >
+
+              <ul class="list-inline text-center">
+                 <li><a href="javascript:void(0)" onclick="openCity(event, 'Solution');" class="active" >Solution</a>
+                 </li>
+                 <li><a a href="javascript:void(0)" onclick="openCity(event, 'Source');" class="active">Source</a>
+                 </li>
+                 <li><a href="javascript:void(0)" onclick="openCity(event, 'Data');" class="active">Data</a>
+                 </li>
+                 <li><a href="javascript:void(0)" onclick="openCity(event, 'Interesting');" class="active">Interesting Things</a>
+                 </li>
+              </ul>
+            </div>
+<hr>
+<div class="row" style="padding: 20px;">
+      <div id="Solution" class="w3-container city" >
+      <h2>Solution</h2>
+      <img style="width: 60%; height: 60%!important;" src="img/solution.png"></img>
+      <p>
+      <a href="">Link Here </a>
+    </p>
+    </div>
+
+    <div id="Data" class="w3-container city" style="display:none">
+      <h2>Data</h2>
+      <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="Source" class="w3-container city" style="display:none">
+      <h2>Source</h2>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+    <div id="Interesting" class="w3-container city" style="display:none">
+      <h2>Interesting Things</h2>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+</div>
+         </div>
+      </section>
+      <!-- script -->
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/lightbox-plus-jquery.js"></script>
+      <script src="js/jquery.shuffle.min.js"></script>
+      <script src="js/modernizr.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+   <script>
+function openCity(evt, cityName) {
+  var x;
+  x =  document.getElementById(cityName);
+  if(cityName != 'Data'){
+     document.getElementById("Data").style.display = "none";
+  }
+  if(cityName != "Solution"){
+     document.getElementById("Solution").style.display = "none";
+  }
+  if(cityName != "Source"){
+     document.getElementById("Source").style.display = "none";
+  }
+  if(cityName != "Interesting"){
+     document.getElementById("Interesting").style.display = "none";
+  }
+
+
+  x.style.display = "block";
+
+}
+</script>
+
+</html>
