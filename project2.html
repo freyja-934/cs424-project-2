@@ -69,7 +69,10 @@
       <a style="color: cornflowerblue" href="http://shiny.evl.uic.edu:3838/g2/project2/">http://shiny.evl.uic.edu:3838/g2/project2/ </a>
          <br>
          This application visualizes data from the website <a style="color: cornflowerblue"  href="https://aqs.epa.gov/aqsweb/airdata/download_files.html">https://aqs.epa.gov/aqsweb/airdata/download_files.html</a> 
-         . You can analyze the air quality data around the US from 1980 – 2018. To select different options such as the year, pollutant type, state and county, 
+         . 
+         You can analyze the air quality data around the US from 1980 – 2018. 
+         <br><br>
+         To select different options such as the year, pollutant type, state and county, 
          select from the list options on the bar on the right-hand side of the page. 
          As you select new options the data on the screen should update to visualize the 
          specifications you chose. 
@@ -78,10 +81,10 @@
          county and state. Below this you can see a bar box plot and table data for each month which shows the number of days 
          that the AQI was good, hazardous, moderate, unknown, unhealthy, unhealthy for sensitive groups and very unhealthy.
 
-         <br>
+         <br><br>
           When you select the map data section you can see the top 100 counties that have an issue with AQI or the pollutant selected based on the annual data. 
           You can also use a slider to pick the number of counties you want to view. 
-          <br>
+          <br><br>
           The Houly Data section displays the data selected in a line graph for 2018.
 
       </p>
@@ -102,45 +105,47 @@
          A file with the state codes, county codes, state name and county name was also created so the codes could be mapped to the names and visa versa. This way spaced was saved by using integer id's rather than strings.
 
       </p>
-      <h2>Getting Started</h2>
-      <p>Download & Install R from <a style="color: cornflowerblue" href="https://www.r-project.org/">https://www.r-project.org/</a> <br>
-         Download & Install RStudio from</p> 
-         <a style="color: cornflowerblue" href="https://www.rstudio.com/products/rstudio/download/">https://www.rstudio.com/products/rstudio/download/</a><br>
-         <p>Open RStudio<br>
-         Install the following packages by entering the following in the console:<br>
-      </p>
-      <code>
-         library(shiny)<br>
-         library(shinydashboard)<br>
-         library(ggplot2)<br>
-         library(lubridate)<br>
-         library(DT)<br>
-         library(jpeg)<br>
-         library(grid)<br>
-         library(leaflet)<br>
-         library(scales)<br>
-         library(reshape) #and melt function from https://www.statmethods.net/management/reshape.html <br>
-         library(tidyr)<br>
-         library(readr) #provided by import button for file <br>
-         library(data.table)<br>
-         library(dplyr)<br>
-         library(raster)<br>
-      </code>
-         <p>
-         Unzip files and open application
-         To run the application press the “Run Application” button on the top right hand side</p>
-         <br>
-         <p>Download the following files from: <a style="color: cornflowerblue" href="https://aqs.epa.gov/aqsweb/airdata/download_files.html">https://aqs.epa.gov/aqsweb/airdata/download_files.html</a>
-         <br>
-         In the annual folder put the annual_aqi_by_county_<year>.csv files
-         <br>
-         In the
-         </p>
+      
     </div>
 
     <div id="Source" class="w3-container city" style="display:none">
       <h2>Source</h2>
-      <p>Tokyo is the capital of Japan.</p>
+      <p>You can download the source code here: <a href="">download</a></p>   
+      <br>
+      <h2>Getting Started</h2>
+         <p>Download & Install R from <a style="color: cornflowerblue" href="https://www.r-project.org/">https://www.r-project.org/</a> <br>
+            Download & Install RStudio from</p> 
+            <a style="color: cornflowerblue" href="https://www.rstudio.com/products/rstudio/download/">https://www.rstudio.com/products/rstudio/download/</a><br>
+            <p>Open RStudio<br>
+            Install the following packages by entering the following in the console:<br>
+         </p>
+         <code>
+            library(shiny)<br>
+            library(shinydashboard)<br>
+            library(ggplot2)<br>
+            library(lubridate)<br>
+            library(DT)<br>
+            library(jpeg)<br>
+            library(grid)<br>
+            library(leaflet)<br>
+            library(scales)<br>
+            library(reshape) #and melt function from https://www.statmethods.net/management/reshape.html <br>
+            library(tidyr)<br>
+            library(readr) #provided by import button for file <br>
+            library(data.table)<br>
+            library(dplyr)<br>
+            library(raster)<br>
+         </code>
+            <p>
+            Unzip files and open application
+            To run the application press the “Run Application” button on the top right hand side</p>
+            <br>
+            <p>Download the following files from: <a style="color: cornflowerblue" href="https://aqs.epa.gov/aqsweb/airdata/download_files.html">https://aqs.epa.gov/aqsweb/airdata/download_files.html</a>
+            <br>
+            In the annual folder put the annual_aqi_by_county_<year>.csv files
+            <br>
+            In the
+            </p>
     </div>
     <div id="Interesting" class="w3-container city" style="display:none">
       <h2>Interesting Things</h2>
