@@ -69,7 +69,39 @@
 
     <div id="Data" class="w3-container city" style="display:none">
       <h2>Data</h2>
-      <p>Paris is the capital of France.</p>
+      <p>The data visualized in this project can be found at <a style="color: cornflowerblue" href="https://aqs.epa.gov/aqsweb/airdata/download_files.html">https://aqs.epa.gov/aqsweb/airdata/download_files.html</a>. 
+         I downloaded all the AQI by County files. Additionally, I downloaded the Site Listing files to get the latitude and longitude locations of each county. 
+         The hourly files in 2018 for Ozone, SO2, CO, NO2, PM2.5 FRM/FEM Mass, PM10 Mass, wind and temperature were also downloaded. 
+         The Daily AQI by County for 1980-2018 were also downloaded.
+         I used the csv files to create the visualizations you see on the application.
+      </p>
+      <h2>Getting Started</h2>
+      <p>Download & Install R from <a style="color: cornflowerblue" href="https://www.r-project.org/">https://www.r-project.org/</a> <br>
+         Download & Install RStudio from</p> 
+         <a style="color: cornflowerblue" href="https://www.rstudio.com/products/rstudio/download/">https://www.rstudio.com/products/rstudio/download/</a><br>
+         <p>Open RStudio<br>
+         Install the following packages by entering the following in the console:<br>
+      </p>
+      <code>
+         library(shiny)<br>
+         library(shinydashboard)<br>
+         library(ggplot2)<br>
+         library(lubridate)<br>
+         library(DT)<br>
+         library(jpeg)<br>
+         library(grid)<br>
+         library(leaflet)<br>
+         library(scales)<br>
+         library(reshape) #and melt function from https://www.statmethods.net/management/reshape.html <br>
+         library(tidyr)<br>
+         library(readr) #provided by import button for file <br>
+         library(data.table)<br>
+         library(dplyr)<br>
+         library(raster)<br>
+      </code>
+         <p>
+         Unzip files and open application
+         To run the application press the “Run Application” button on the top right hand side</p>
     </div>
 
     <div id="Source" class="w3-container city" style="display:none">
