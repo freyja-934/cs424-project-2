@@ -62,9 +62,14 @@
       <div id="Solution" class="w3-container city" >
       <h2>Solution</h2>
       <img style="width: 60%; height: 60%!important;" src="img/project.png"></img>
+      <br><br>
+      <h2>How to Use This Application</h2>
       <p>
-      <a href="">Link Here </a>
-    </p>
+         To see and interact with the application click on the following link: 
+      <a style="color: cornflowerblue" href="http://shiny.evl.uic.edu:3838/g2/project2/">http://shiny.evl.uic.edu:3838/g2/project2/ </a>
+         <br>
+         This application visualizes data from the website https://aqs.epa.gov/aqsweb/airdata/download_files.html. 
+   </p>
     </div>
 
     <div id="Data" class="w3-container city" style="display:none">
@@ -74,6 +79,13 @@
          The hourly files in 2018 for Ozone, SO2, CO, NO2, PM2.5 FRM/FEM Mass, PM10 Mass, wind and temperature were also downloaded. 
          The Daily AQI by County for 1980-2018 were also downloaded.
          I used the csv files to create the visualizations you see on the application.
+         <br>
+         The data was cleaned using python script files. The hourly folder contains the 2018 files for Ozone, SO2, CO, NO2, PM2.5 FRM/FEM Mass, PM10 Mass, wind and temperature.
+         All files except wind were reduced to the following columns: 
+         <br>State Code, County Code, Date Local, Time Local, Sample Measurement
+         <br>
+         A file with the state codes, county codes, state name and county name was also created so the codes could be mapped to the names and visa versa. This way spaced was saved by using integer id's rather than strings.
+
       </p>
       <h2>Getting Started</h2>
       <p>Download & Install R from <a style="color: cornflowerblue" href="https://www.r-project.org/">https://www.r-project.org/</a> <br>
@@ -102,6 +114,13 @@
          <p>
          Unzip files and open application
          To run the application press the “Run Application” button on the top right hand side</p>
+         <br>
+         <p>Download the following files from: <a style="color: cornflowerblue" href="https://aqs.epa.gov/aqsweb/airdata/download_files.html">https://aqs.epa.gov/aqsweb/airdata/download_files.html</a>
+         <br>
+         In the annual folder put the annual_aqi_by_county_<year>.csv files
+         <br>
+         In the
+         </p>
     </div>
 
     <div id="Source" class="w3-container city" style="display:none">
